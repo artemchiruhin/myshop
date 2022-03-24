@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin/*
+Allow: /products/*
+Sitemap: 192.168.64.2:8000/sitemap.xml

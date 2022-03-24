@@ -1,0 +1,71 @@
+@media screen and (max-width: 768px) {
+    .btn-hamburger {
+        display: block;
+    }
+    .nav-buttons {
+        display: none;
+    }
+    .admin-panel-item {
+        display: none;
+    }
+    .menu-top-item {
+    	display: none;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .admin-sidebar-container {
+        border: none;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+    .hero-block-right {
+        display: none;
+    }
+    .hero-block-left {
+        text-align: center;
+    }
+    .title-main {
+        font-size: 90px;
+    }
+    .hero-description {
+        font-size: 25px;
+    }
+    .hero-btn {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    footer .title {
+        font-size: 30px;
+    }
+    .orders-table-container {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 1370px) and (min-width: 992px) {
+    .orders-table-container {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 820px) {
+
+    .title-main {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .categories-table-container {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .user-orders-table-container {
+        overflow-x: scroll;
+    }
+}

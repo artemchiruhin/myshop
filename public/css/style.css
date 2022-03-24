@@ -1,0 +1,237 @@
+.navigation {
+    padding: 20px 15px;
+    background: #5D44F8;
+}
+.navigation > .main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    margin-right: 20px;
+}
+.logo a {
+    font-size: 1.25rem;
+}
+.menu li {
+    margin: 0 10px;
+}
+.menu li:first-child {
+    margin-left: 0;
+}
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+.menu li a:hover, .user-link:hover, .admin-panel-link:hover {
+    color: #fff;
+    transition: color .25s ease-in-out;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    margin-right: 15px;
+}
+.nav-buttons a:last-child {
+    margin-right: 0;
+}
+
+/* Нижнее меню (на телефоне) */
+.menu-bottom {
+    display: none;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.menu-bottom .menu li {
+    margin: 0;
+}
+.menu-bottom .menu a {
+    font-size: 18px;
+}
+.menu-bottom .nav-buttons-bottom a {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+}
+.menu-bottom__active {
+    display: block;
+}
+.menu-bottom .menu {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.menu-bottom .menu li {
+    margin-bottom: 10px;
+}
+
+.hero {
+    padding-top: 200px;
+}
+.products {
+    margin-top: 100px;
+}
+.products-section {
+    margin-top: 300px;
+}
+.product-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: auto;
+}
+.product-buttons > form {
+    margin-bottom: 10px;
+}
+.product-buttons > form > button {
+    width: 100%;
+}
+.title-main {
+    font-size: 72px;
+    color: #5D44F8;
+    margin-bottom: 35px;
+}
+.title-main ~ .hero-description {
+    margin-bottom: 35px;
+}
+.hero-img {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.hero-block-right {
+    position: relative;
+}
+.hero-block-right::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    background-color: #F8BC39;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-50px) rotate(-30deg) skewY(-10deg);
+    animation: skewMove 3s infinite ease-in-out;
+}
+.hero-block-right::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f8bc3945;
+    z-index: 1;
+    border-radius: 50%;
+}
+@keyframes skewMove {
+    0% {
+        transform: translateY(-50px) skewY(-10deg);
+
+    }
+    50% {
+        transform: translateY(-50px) skewY(20deg);
+    }
+    100% {
+        transform: translateY(-50px) skewY(-10deg);
+    }
+}
+footer {
+    background-color: #F8BC39;
+    padding: 50px 0;
+}
+.contacts {
+    text-align: right;
+}
+.footer-main > h2 {
+    font-size: 48px;
+}
+.contacts-list {
+    list-style: none;
+}
+
+.register-form, .login-form {
+    margin-top: 100px;
+}
+
+.product-block__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-list a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.feedback-form {
+    margin-bottom: 50px;
+}
+
+.about-us {
+    margin-top: 70px;
+}
+.about-us__item {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #5D44F8;
+}
+.about-us__item:last-child {
+    border: none;
+}
+.about-us__item .about-us__item_data img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.about-us__item_data {
+    text-align: center;
+    margin-right: 20px;
+}
+.about-us__item_text {
+    flex-shrink: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-not-found {
+    margin-top: 100px;
+}
+.page-not-found h1 {
+    margin-bottom: 50px;
+}
+
+.user-link, .admin-panel-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.admin-sidebar {
+    list-style: none;
+    padding: 0;
+}
+.admin-sidebar li a {
+    text-decoration: none;
+    color: #5D44F8;
+}
+.admin-sidebar li {
+    padding: 7px 10px;
+}
+.admin-sidebar li a.active {
+    border-left: 3px solid #5D44F8;
+    background: #5c44f82b;
+}
+
+.admin-dashboard {
+    margin-top: 50px;
+}
+
+.admin-sidebar-container {
+    border-right: 1px solid #5D44F8;
+}
+
